@@ -1,0 +1,2 @@
+do_sample: False
+temperature: 0.0

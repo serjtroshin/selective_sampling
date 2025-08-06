@@ -1,0 +1,5 @@
+do_sample: True
+temperature: 1.0
+num_beams: 10
+top_p: 0.9
+early_stopping: True

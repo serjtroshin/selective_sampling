@@ -1,0 +1,4 @@
+limit=10
+for seed in 0 1 2; do  # for full run, use 25 seeds and set limit to 5000
+python -m lm_eval --model vllm_wrapper   --model_args pretrained=meta-llama/Meta-Llama-3.1-8B-Instruct,dtype=bfloat16 --device cuda:0  --batch_size 256 --limit ${limit} --write_out --log_samples --output_path outputs/exps_paper_min_p/symbolic_gsm8k_cot_llama_main/${limit}/min_p/min_p_0.1/temp_1.0/seed_${seed}/  --verbosity DEBUG --tasks symbolic_gsm8k_cot_llama_main --include_path selective_sampling/tasks --gen_kwargs sampling_config=min_p,override__min_p=0.1,override__temperature=1.0,seed=${seed},max_gen_toks=1024 --apply_chat_template --fewshot_as_multiturn
+done

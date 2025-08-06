@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "selective_sampling"
+version = "0.1.0"
+license = "MIT License"
+authors = ["Sergey Troshin <serj.troshin@proton.me>"]
+description = "Selective sampling for diverse and high quality LLM outputs."
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = { version = "2.5.1+cu121", source = "pytorch_cuda" }
+torchvision = { version = "0.20.1+cu121", source = "pytorch_cuda" }
+torchaudio = { version = "2.5.1+cu121", source = "pytorch_cuda" }
+vllm = "0.6.4.post1"
+lm-eval = { path = "./lm-evaluation-harness", develop = true }
+transformers = "4.46.3"
+datasets = "3.1.0"
+numpy = "1.26.4"
+pandas = "2.2.3"
+scipy = "1.14.1"
+scikit-learn = "1.5.2"
+matplotlib = "3.9.1"
+seaborn = "0.13.2"
+huggingface-hub = "0.26.2"
+tensorboard = "2.18.0"
+tensorflow = "2.18.0"
+accelerate = "1.0.1"
+fastapi = "0.115.5"
+uvicorn = "0.32.0"
+jupyter = "^1.0.0"
+black = "24.10.0"
+isort = "5.13.2"
+loguru = "0.7.3"
+
+[[tool.poetry.source]]
+name = "pytorch_cuda"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "logs/",
+    "samples/",
+    "**/.o",
+    "**/.e",
+    "data/",
+    "cache/"
+]

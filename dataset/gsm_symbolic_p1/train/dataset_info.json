@@ -1,0 +1,66 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "p1",
+  "dataset_name": "gsm-symbolic",
+  "dataset_size": 6463909,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/apple/GSM-Symbolic@93b5b3758d9d9841ffe81d6cd2ae2b030685b078/p1/test.jsonl": {
+      "num_bytes": 7012956,
+      "checksum": null
+    }
+  },
+  "download_size": 7012956,
+  "features": {
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "instance": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "original_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "original_question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "original_answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "canary": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 13476865,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 6463909,
+      "num_examples": 5000,
+      "dataset_name": "gsm-symbolic"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

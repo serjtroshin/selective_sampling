@@ -1,0 +1,1 @@
+For token importance data, we use train splits of the datasets (make sure to comment out test splits from the config file).
