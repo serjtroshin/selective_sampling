@@ -43,7 +43,9 @@ PYTHONPATH="." python run/run_diversity.py --task_name symbolic_gsm8k_cot_llama_
 # Classifier Training
 TBD
 
-# Citation
+# Acknowledgements
+This work was partly funded by the European Union's Horizon Europe (HE) Research and Innovation programme under Grant Agreement No 101070631 and from the UK Research and Innovation (UKRI) under the UK government's HE funding grant No 10039436.
+
 If you use this code in your research, please cite our paper:
 ```bibtex
 @inproceedings{selective_sampling2025,
