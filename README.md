@@ -40,11 +40,10 @@ PYTHONPATH="." python run/run_diversity.py --task_name symbolic_gsm8k_cot_llama_
 PYTHONPATH="." python run/run_diversity.py --task_name symbolic_gsm8k_cot_llama_main --samples_dir ./outputs/exps_paper_ours --limit <limit> --model_from_seed_dir ./outputs/exps_paper_ours/symbolic_gsm8k_cot_llama_main/10/min_p/min_p_0.1/temp_1.0/seed_0 --num_samples <number_of_samples>
 ```
 
-# Classifier Training
-TBD
-
 # Acknowledgements
 This work was partly funded by the European Union's Horizon Europe (HE) Research and Innovation programme under Grant Agreement No 101070631 and from the UK Research and Innovation (UKRI) under the UK government's HE funding grant No 10039436.
+
+This research was funded in part by the Netherlands Organization for Scientific Research (NWO) under project numbers VI.C.192.080 and 2023.017.
 
 If you use this code in your research, please cite our paper:
 ```bibtex
